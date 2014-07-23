@@ -54,8 +54,8 @@ class MasterViewController: UITableViewController {
             let detailViewController :DetailViewController = segue.destinationViewController as DetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow()
             let recipe = recipes[indexPath.row] as NSDictionary
-            detailViewController.url         = recipe["url"] as NSString
-            detailViewController.page_title  = recipe["title"] as NSString
+            detailViewController.url         = recipe["url"] as NSString!
+            detailViewController.page_title  = recipe["title"] as NSString!
         }
     }
     

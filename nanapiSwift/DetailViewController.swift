@@ -10,11 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController, UIWebViewDelegate {
 
-    @IBOutlet var detailDescriptionLabel: UILabel
+    @IBOutlet weak var detailDescriptionLabel: UILabel!
     
-    var url :NSString!
-    var page_title :NSString!
+    var url :NSString?
+    var page_title :NSString?
     var webview: UIWebView = UIWebView()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
